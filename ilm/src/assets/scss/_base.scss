@@ -1,0 +1,33 @@
+@mixin respond($breakpoint) {
+  @if $breakpoint == phone {
+    @media (max-width: 37.5em) {
+      @content
+    }  
+  }
+}
+:root {
+  --dark: #424656;
+  --pink: #F46D86;
+  --blue: #1565C0;
+  --gray: #A6ABBD;
+}
+*,
+*::after,
+*::before{
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+
+}
+html {
+  font-size: 62.5%;
+
+  @include respond(phone) {
+    font-size: 30%;
+  }
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}

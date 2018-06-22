@@ -1,0 +1,20 @@
+.searchBox {
+  display: flex;
+  justify-content: center;
+}
+.searchBox__input {
+  height: 3rem;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: var(--dark);
+  font-size: 2rem;
+  font-family: inherit;
+  border-bottom: 3px solid var(--blue);
+
+  &::placeholder {
+    font-family: inherit;
+    font-size: 2rem;
+    color: var(--dark);
+  }
+}
