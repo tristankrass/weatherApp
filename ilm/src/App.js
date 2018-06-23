@@ -21,7 +21,7 @@ class App extends Component {
 		currentCity: "Tallinn",
 		dates: [utilities.currentDate, utilities.currentDate1, utilities.currentDate2, utilities.currentDate3, utilities.currentDate4],
 		temperatures: [],
-		favCities: []
+		favCities: localStorage.getItem("favCities") || []
 	};
 	
 	
@@ -39,7 +39,6 @@ class App extends Component {
 					this.setState({
 						temperatures: data.list.slice(0, 5),
 						currentCity: data.city.name,
-						
 						city: "",
 					});
 				} )
@@ -55,16 +54,17 @@ class App extends Component {
 		})
 	};
 	
-	demo = () => {
-		const newCity = this.state.currentCity;
-		
+	saveCityHandle = () => {
+		const newCity = {
+			city: this.state.currentCity.slice(),
+			id: 1 + Math.random()
+		};
 		const listOfCities = [...this.state.favCities];
 		listOfCities.push(newCity);
-		console.log(listOfCities);
-		localStorage.setItem("FavouriteCities", this.state.favCities);
 		this.setState({
 			favCities: listOfCities
-		})
+		});
+		localStorage.setItem("favCities", JSON.stringify(listOfCities));
 	};
 	
 	componentDidMount() {
@@ -74,7 +74,6 @@ class App extends Component {
 	render() {
 		/*console.log(localStorage.setItem(this.state.favCities, this.state.currentCity));
 		console.log(this.state.favCities);*/
-		console.log(this.state.favCities);
 		const temperatures = this.state.temperatures.map((temp, idx) => {
 			return (
 				<DailyWeatherForecast
@@ -92,9 +91,9 @@ class App extends Component {
 	      <div className="logo">
 		      <img className="logo__img" src={logo} alt="Logo"/>
 	      </div>
-	      <FavCity/>
-	      { this.state.favCities }
-	      <button onClick={this.demo} className="btn"> Add city favourite</button>
+	      <FavCity cities={ this.state.favCities }/>
+	      
+	      <button onClick={ this.saveCityHandle } className="btn"> Add city favourite</button>
 	      <h1 className="heading heading__primary">
 		      Location  { this.state.currentCity }
 	      </h1>

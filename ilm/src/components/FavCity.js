@@ -1,8 +1,16 @@
 import React from "react";
 
-const FavCity = (props) => {
+const FavCity = ({cities}) => {
+	
+
+	
 	return (
-		<h1>Hello from City </h1>
+		<div>
+			<h3 className="heading heading__fourth">
+				{ cities }
+			</h3>
+		</div>
+		
 	)
 };
 
