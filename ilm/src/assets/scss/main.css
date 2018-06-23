@@ -103,4 +103,9 @@ body {
     background-color: var(--pink);
     color: white; }
 
+.saveFavourite__star {
+  height: 3rem;
+  width: 3rem;
+  cursor: pointer; }
+
 /*# sourceMappingURL=main.css.map */

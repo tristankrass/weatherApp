@@ -4,23 +4,24 @@ import './assets/scss/main.css';
 import SearchBox from "./components/SearchBox";
 import Particles from "react-particles-js";
 import weatherImage from "./assets/images/weather.jpg";
-import * as urls from "./helpers/Auth";
 import DailyWeatherForecast from "./components/dailyWeatherForecast";
-import {localCity} from "./helpers/Auth";
 import {AUTH} from "./helpers/Auth";
 import Button from "./components/Button";
+import * as utilities from "./helpers/utilities";
+import SaveFavourite from "./components/SaveFavourite";
+import FavCity from "./components/FavCity";
 
 
 
-const Today = new Date().getDate();
-const Month = new Date().getMonth() + 1;
-const Year = new Date().getFullYear();
+
 class App extends Component {
 	state = {
 		isLoading: false,
 		city: "Tallinn",
 		currentCity: "Tallinn",
+		dates: [utilities.currentDate, utilities.currentDate1, utilities.currentDate2, utilities.currentDate3, utilities.currentDate4],
 		temperatures: [],
+		favCities: []
 	};
 	
 	
@@ -35,10 +36,10 @@ class App extends Component {
 					return value.json()
 				})
 				.then(data => {
-					console.log(data.list.slice(0, 5));
 					this.setState({
 						temperatures: data.list.slice(0, 5),
 						currentCity: data.city.name,
+						
 						city: "",
 					});
 				} )
@@ -54,31 +55,50 @@ class App extends Component {
 		})
 	};
 	
+	demo = () => {
+		const newCity = this.state.currentCity;
+		
+		const listOfCities = [...this.state.favCities];
+		listOfCities.push(newCity);
+		console.log(listOfCities);
+		localStorage.setItem("FavouriteCities", this.state.favCities);
+		this.setState({
+			favCities: listOfCities
+		})
+	};
+	
 	componentDidMount() {
 		this.handleCallToDatabase();
 	};
 	
 	render() {
-		const temperatures = this.state.temperatures.map(temp => {
+		/*console.log(localStorage.setItem(this.state.favCities, this.state.currentCity));
+		console.log(this.state.favCities);*/
+		console.log(this.state.favCities);
+		const temperatures = this.state.temperatures.map((temp, idx) => {
 			return (
 				<DailyWeatherForecast
 					key={temp.dt}
 					temperature={Math.floor(temp.main.temp)}
-					date={temp.dt_txt.split(" ")[0]}
+					date={this.state.dates[idx] }
 					description={temp.weather[0].description}/>
 			)
 		});
+	
+		
     return (
+    	
       <div className="layout">
 	      <div className="logo">
 		      <img className="logo__img" src={logo} alt="Logo"/>
 	      </div>
-	      <nav>
-		      <h6 style={ { color: "red"}}>Add the city to favourites</h6>
-	      </nav>
+	      <FavCity/>
+	      { this.state.favCities }
+	      <button onClick={this.demo} className="btn"> Add city favourite</button>
 	      <h1 className="heading heading__primary">
 		      Location  { this.state.currentCity }
 	      </h1>
+	      <SaveFavourite/>
 	      <div className="searchBar">
 		      <SearchBox change={this.handleInputValue} value={this.state.city}/>
 		      <Button newCity={ this.handleCallToDatabase } longEnough={this.state.city}/>
