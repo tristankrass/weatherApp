@@ -4,11 +4,14 @@ body {
 }
 
 .heading {
-
+  color: var(--dark);
 
 }
 .heading__primary {
   font-size: 4rem;
   color: var(--dark);
 
+}
+.heading__secondary {
+  font-size: 2rem;
 }

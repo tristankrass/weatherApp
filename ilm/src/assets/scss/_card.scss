@@ -1,13 +1,17 @@
-.Card {
+.cards {
+  display: flex;
+  justify-content: center;
+}
+
+.DailyWeatherCard {
+  background-color: var(--gray);
   border: 1px solid var(--pink);
   height: 20rem;
-  width: 20%;
+  width: 15rem;
   display: flex;
+  margin: 1rem;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
-.cards {
-  display: flex;
-  justify-content: space-around;
+  border-radius: 3rem;
 }

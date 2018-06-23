@@ -3,6 +3,7 @@
   justify-content: center;
 }
 .searchBox__input {
+  font-size: 2rem;
   height: 3rem;
   background-color: transparent;
   border: none;
@@ -10,11 +11,18 @@
   color: var(--dark);
   font-size: 2rem;
   font-family: inherit;
-  border-bottom: 3px solid var(--blue);
+  border: none;
+  padding: 2rem;
+  border-radius: 3rem;
 
   &::placeholder {
     font-family: inherit;
     font-size: 2rem;
     color: var(--dark);
+  }
+  &:active,
+  &:focus,
+  &:hover {
+    border: 3px solid var(--pink);
   }
 }

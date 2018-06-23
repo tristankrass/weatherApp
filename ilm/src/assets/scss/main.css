@@ -22,18 +22,34 @@ body {
   padding: 0;
   font-family: sans-serif; }
 
+.layout {
+  display: flex;
+  flex-direction: column; }
+
+.searchBar {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
 body {
   font-family: 'Open Sans', sans-serif; }
+
+.heading {
+  color: var(--dark); }
 
 .heading__primary {
   font-size: 4rem;
   color: var(--dark); }
+
+.heading__secondary {
+  font-size: 2rem; }
 
 .searchBox {
   display: flex;
   justify-content: center; }
 
 .searchBox__input {
+  font-size: 2rem;
   height: 3rem;
   background-color: transparent;
   border: none;
@@ -41,11 +57,15 @@ body {
   color: var(--dark);
   font-size: 2rem;
   font-family: inherit;
-  border-bottom: 3px solid var(--blue); }
+  border: none;
+  padding: 2rem;
+  border-radius: 3rem; }
   .searchBox__input::placeholder {
     font-family: inherit;
     font-size: 2rem;
     color: var(--dark); }
+  .searchBox__input:active, .searchBox__input:focus, .searchBox__input:hover {
+    border: 3px solid var(--pink); }
 
 .logo {
   display: flex;
@@ -55,17 +75,32 @@ body {
 .logo__img {
   height: 100%; }
 
-.Card {
-  border: 1px solid var(--pink);
-  height: 20rem;
-  width: 20%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center; }
-
 .cards {
   display: flex;
-  justify-content: space-around; }
+  justify-content: center; }
+
+.DailyWeatherCard {
+  background-color: var(--gray);
+  border: 1px solid var(--pink);
+  height: 20rem;
+  width: 15rem;
+  display: flex;
+  margin: 1rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 3rem; }
+
+.btn {
+  border: 1px solid var(--pink);
+  padding: 1rem;
+  font-size: 3rem;
+  color: var(--dark);
+  cursor: pointer;
+  border-radius: 2rem;
+  outline: none; }
+  .btn:hover {
+    background-color: var(--pink);
+    color: white; }
 
 /*# sourceMappingURL=main.css.map */

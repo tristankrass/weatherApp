@@ -1,18 +1,15 @@
 import React from "react";
 
-const SearchBox = ({inputChange, value, onsubmit }) => (
+const SearchBox = ({change, value}) => (
 	<div className="searchBox">
-		<form onSubmit={onsubmit}>
 			<input
 				className="searchBox__input"
 				type="text"
-				onChange={inputChange}
-				// value={value}
-				placeholder="Sisesta linn"
+				value={value}
+				onChange={change}
+				placeholder="Type a city"
 			/>
-			<input type="submit" value="Sisesta"/>
-		</form>
-	
+		
 	</div>
 );
 

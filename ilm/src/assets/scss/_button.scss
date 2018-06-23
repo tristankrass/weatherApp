@@ -1,0 +1,14 @@
+.btn {
+  border: 1px solid var(--pink);
+  padding: 1rem;
+  font-size: 3rem;
+  color: var(--dark);
+  cursor: pointer;
+  border-radius: 2rem;
+  outline: none;
+
+  &:hover {
+    background-color: var(--pink);
+    color: white;
+  }
+}
