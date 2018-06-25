@@ -121,6 +121,7 @@ class App extends Component {
 					date={this.state.dates[idx] }
 					description={temp.weather[0].description}/>
 			)
+			
 		});
 	
 		

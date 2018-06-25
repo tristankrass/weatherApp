@@ -2,35 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a21ed004-d42b-42fb-8f1a-92faab52c202" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/ilm/src/assets/scss/_spinner.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ilm/src/components/CityNotFound.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ilm/src/components/CurrentLocation.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ilm/src/components/Map.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ilm/src/components/Spinner.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ilm/src/components/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ilm/src/containers/CurrentLocation.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ilm/src/containers/FavouriteCities.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ilm/src/containers/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ilm/src/assets/images/Raining.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ilm/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/ilm/src/containers/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ilm/src/assets/scss/_base.scss" beforeDir="false" afterPath="$PROJECT_DIR$/ilm/src/assets/scss/_base.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ilm/src/assets/scss/_button.scss" beforeDir="false" afterPath="$PROJECT_DIR$/ilm/src/assets/scss/_button.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ilm/src/assets/scss/_card.scss" beforeDir="false" afterPath="$PROJECT_DIR$/ilm/src/assets/scss/_card.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ilm/src/assets/scss/_input.scss" beforeDir="false" afterPath="$PROJECT_DIR$/ilm/src/assets/scss/_input.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ilm/src/assets/scss/_saveFavourite.scss" beforeDir="false" afterPath="$PROJECT_DIR$/ilm/src/assets/scss/_saveFavourite.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ilm/src/assets/scss/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/ilm/src/assets/scss/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ilm/src/assets/scss/main.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/ilm/src/assets/scss/main.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ilm/src/assets/scss/main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/ilm/src/assets/scss/main.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ilm/src/components/Button.js" beforeDir="false" afterPath="$PROJECT_DIR$/ilm/src/components/Button.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ilm/src/components/FavCity.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ilm/src/components/SaveFavourite.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ilm/src/components/SearchBox.js" beforeDir="false" afterPath="$PROJECT_DIR$/ilm/src/components/SearchBox.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ilm/src/helpers/Auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/ilm/src/helpers/Auth.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ilm/src/helpers/utilities.js" beforeDir="false" afterPath="$PROJECT_DIR$/ilm/src/helpers/utilities.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ilm/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/ilm/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.yarn-integrity" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.yarn-integrity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ilm/src/components/dailyWeatherForecast.js" beforeDir="false" afterPath="$PROJECT_DIR$/ilm/src/components/dailyWeatherForecast.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ilm/src/containers/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/ilm/src/containers/App.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -56,11 +31,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ilm/src/containers/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="2" column="35" selection-start-line="2" selection-start-column="35" selection-end-line="2" selection-end-column="35" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ilm/src/components/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="4" column="35" selection-start-line="4" selection-start-column="35" selection-end-line="4" selection-end-column="35" />
+            <state relative-caret-position="90">
+              <caret line="3" column="44" lean-forward="true" selection-start-line="3" selection-start-column="44" selection-end-line="3" selection-end-column="44" />
             </state>
           </provider>
         </entry>
@@ -83,11 +67,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="dailyWeatherForecast.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="dailyWeatherForecast.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/ilm/src/components/dailyWeatherForecast.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="300">
-              <caret line="10" column="17" lean-forward="true" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
+              <caret line="10" column="86" selection-start-line="10" selection-start-column="86" selection-end-line="10" selection-end-column="86" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -95,22 +82,20 @@
       <file leaf-file-name="App.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ilm/src/containers/App.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="6" selection-start-line="6" selection-end-line="6" />
+            <state relative-caret-position="343">
+              <caret line="116" selection-start-line="116" selection-end-line="116" />
+              <folding>
+                <element signature="e#0#41#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="CurrentLocation.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ilm/src/containers/CurrentLocation.js">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file leaf-file-name="CurrentLocation.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ilm/src/components/CurrentLocation.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="3" selection-start-line="3" selection-end-line="3" />
+            <state relative-caret-position="480">
+              <caret line="16" column="66" selection-start-line="16" selection-start-column="66" selection-end-line="16" selection-end-column="66" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -160,6 +145,7 @@
       <find>updateCity</find>
       <find>Current</find>
       <find>CurrentLocatio</find>
+      <find>Dail</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -179,7 +165,6 @@
         <option value="$PROJECT_DIR$/ilm/src/Auth.js" />
         <option value="$PROJECT_DIR$/ilm/src/components/dailyWeatherComponent.js" />
         <option value="$PROJECT_DIR$/ilm/src/assets/scss/_typography.scss" />
-        <option value="$PROJECT_DIR$/ilm/src/components/dailyWeatherForecast.js" />
         <option value="$PROJECT_DIR$/ilm/src/assets/scss/SaveFavourite.scss" />
         <option value="$PROJECT_DIR$/ilm/src/components/SaveFavourite.js" />
         <option value="$PROJECT_DIR$/ilm/src/helpers/Auth.js" />
@@ -192,7 +177,6 @@
         <option value="$PROJECT_DIR$/ilm/src/App.js" />
         <option value="$PROJECT_DIR$/ilm/src/components/SearchBox.js" />
         <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/ilm/src/containers/index.js" />
         <option value="$PROJECT_DIR$/ilm/src/index.js" />
         <option value="$PROJECT_DIR$/ilm/src/components/FavCity.js" />
         <option value="$PROJECT_DIR$/ilm/src/components/Spinner.js" />
@@ -203,9 +187,11 @@
         <option value="$PROJECT_DIR$/ilm/src/assets/scss/_saveFavourite.scss" />
         <option value="$PROJECT_DIR$/ilm/src/containers/FavouriteCities.js" />
         <option value="$PROJECT_DIR$/ilm/src/components/CurrentLocation.js" />
-        <option value="$PROJECT_DIR$/ilm/src/containers/CurrentLocation.js" />
-        <option value="$PROJECT_DIR$/ilm/src/containers/App.js" />
         <option value="$PROJECT_DIR$/ilm/src/components/index.js" />
+        <option value="$PROJECT_DIR$/ilm/src/containers/CurrentLocation.js" />
+        <option value="$PROJECT_DIR$/ilm/src/containers/index.js" />
+        <option value="$PROJECT_DIR$/ilm/src/containers/App.js" />
+        <option value="$PROJECT_DIR$/ilm/src/components/dailyWeatherForecast.js" />
       </list>
     </option>
   </component>
@@ -273,14 +259,6 @@
               <item name="WeatherApp" type="462c0819:PsiDirectoryNode" />
               <item name="ilm" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-              <item name="scss" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="WeatherApp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="WeatherApp" type="462c0819:PsiDirectoryNode" />
-              <item name="ilm" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="components" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -312,16 +290,17 @@
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/ilm/src/assets/images" />
+      <recent name="$PROJECT_DIR$/ilm/public" />
+      <recent name="$PROJECT_DIR$/ilm/src" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/ilm/src/containers" />
       <recent name="$PROJECT_DIR$/ilm/src/assets/images" />
       <recent name="$PROJECT_DIR$/ilm/src/helpers" />
       <recent name="$PROJECT_DIR$/ilm/src/assets" />
       <recent name="$PROJECT_DIR$/ilm/src/components" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/ilm/public" />
-      <recent name="$PROJECT_DIR$/ilm/src" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -357,12 +336,12 @@
       <workItem from="1529755648729" duration="2264000" />
       <workItem from="1529846909902" duration="4338000" />
       <workItem from="1529859727327" duration="2247000" />
-      <workItem from="1529909697801" duration="13211000" />
+      <workItem from="1529909697801" duration="13979000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="56166000" />
+    <option name="totallyTimeSpent" value="56934000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1920" y="0" width="1920" height="1200" extended-state="6" />
@@ -376,7 +355,7 @@
       <window_info anchor="bottom" id="Version Control" order="10" />
       <window_info id="Structure" order="1" sideWeight="0.50061655" side_tool="true" weight="0.18423855" />
       <window_info anchor="right" id="Mongo Explorer" order="3" />
-      <window_info anchor="bottom" id="Terminal" order="9" weight="0.21777777" />
+      <window_info anchor="bottom" id="Terminal" order="9" visible="true" weight="0.21777777" />
       <window_info anchor="bottom" id="RNConsole" order="8" weight="0.32962963" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info id="Favorites" order="2" side_tool="true" />
@@ -662,13 +641,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ilm/src/containers/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="1" column="35" selection-start-line="1" selection-start-column="35" selection-end-line="1" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ilm/src/assets/scss/_button.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="780">
@@ -693,37 +665,50 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ilm/src/components/dailyWeatherForecast.js">
+    <entry file="file://$PROJECT_DIR$/ilm/src/components/CurrentLocation.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ilm/src/components/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="10" column="17" lean-forward="true" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
+        <state relative-caret-position="90">
+          <caret line="3" column="44" lean-forward="true" selection-start-line="3" selection-start-column="44" selection-end-line="3" selection-end-column="44" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ilm/src/components/CurrentLocation.js">
+    <entry file="file://$PROJECT_DIR$/ilm/src/containers/CurrentLocation.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        <state relative-caret-position="480">
+          <caret line="16" column="66" selection-start-line="16" selection-start-column="66" selection-end-line="16" selection-end-column="66" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ilm/src/containers/CurrentLocation.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ilm/src/containers/App.js">
+    <entry file="file://$PROJECT_DIR$/ilm/src/containers/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="6" selection-start-line="6" selection-end-line="6" />
+        <state relative-caret-position="60">
+          <caret line="2" column="35" selection-start-line="2" selection-start-column="35" selection-end-line="2" selection-end-column="35" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ilm/src/components/index.js">
+    <entry file="file://$PROJECT_DIR$/ilm/src/containers/App.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="4" column="35" selection-start-line="4" selection-start-column="35" selection-end-line="4" selection-end-column="35" />
+        <state relative-caret-position="343">
+          <caret line="116" selection-start-line="116" selection-end-line="116" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ilm/src/components/dailyWeatherForecast.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="10" column="86" selection-start-line="10" selection-start-column="86" selection-end-line="10" selection-end-column="86" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
