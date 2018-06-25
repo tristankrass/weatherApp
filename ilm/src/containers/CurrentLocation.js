@@ -1,6 +1,5 @@
 import React from 'react';
 import {geolocated} from 'react-geolocated';
-import {AUTH} from "../helpers/Auth";
 import {Spinner} from "../components";
 
 class CurrentLocation extends React.Component {
@@ -15,7 +14,9 @@ class CurrentLocation extends React.Component {
 				: this.props.coords
 					?
 						<button className="btn btn_currentLocation" onClick={ this.props.callToDatabaseWithCoords }>Get Your Local Weather Forecast</button>
-					: <div><Spinner/></div>;
+					: <div>
+						<Spinner/>
+					</div>;
 	}
 }
 

@@ -2,14 +2,18 @@ import React, { Component } from 'react';
 import logo from '../assets/images/logo.svg';
 import '../assets/scss/main.css';
 import {geolocated} from 'react-geolocated';
-import {Button, Spinner, DailyWeatherForecast, SearchBox} from "../components";
-import {AUTH} from "../helpers/Auth";
+import {Button, Spinner, DailyWeatherForecast, SearchBox, Map} from "../components";
+import {AUTH, BASE_GMAPURL} from "../helpers/Auth";
 import * as utilities from "../helpers/utilities";
 import CityNotFound from "../components/CityNotFound";
 import {FavouriteCities, CurrentLocation} from "./index";
 
 class App extends Component {
 	state = {
+		lat: null,
+		long: null,
+		todaysTemp: null,
+		todaysDesc: "",
 		showCities: false,
 		Error: false,
 		isLoading: false,
@@ -40,19 +44,12 @@ class App extends Component {
 				return res.json()
 			})
 			.then(data => {
-				console.log(data);
 				this.setState({
 					currentCity: data.name,
+					city: data.name
 				});
-			} )
-			.catch(err => {
-				return <CityNotFound errorMessage={err}/>
+				this.handleCallToDatabase()
 			})
-			.finally(() => {
-				this.setState({
-					isLoading: false,
-				});
-			});
 	};
 	
 	handleCallToDatabase = () => {
@@ -73,7 +70,12 @@ class App extends Component {
 					return value.json()
 				})
 				.then(data => {
+					console.log(data.city.coord.lat)
+					console.log(data.city.coord.lon)
 					this.setState({
+						lat: data.city.coord.lat,
+						long: data.city.coord.lon,
+						todaysTemp: null,
 						temperatures: data.list.slice(0, 5),
 						currentCity: data.city.name,
 						city: "",
@@ -124,17 +126,17 @@ class App extends Component {
 			
 		});
 	
-		
     return (
     	
       <div className="layout">
+	
 	      <div className="logo">
 		      <img className="logo__img" src={logo} alt="Logo"/>
 		      <h2 className="heading heading__tertiary">WeatherApp</h2>
 	      </div>
 	      { this.state.isLoading ? <Spinner/> : null }
 	     
-	     
+	      { this.state.todaysTemp }
 	      <SearchBox change={this.handleInputValue} value={this.state.city}/>
 	
 	      { this.state.Error ? <CityNotFound /> : null }
@@ -152,17 +154,31 @@ class App extends Component {
 			
 	     
 	      <hr style={ {marginTop: '3rem'}}/>
-	      <h1 className="heading heading__primary">Current Location  { this.state.currentCity }</h1>
-	
-	      <h1 className="heading heading__secondary">Weather Forecast for the next 5 days in { this.state.currentCity }</h1>
-	      <section className="cards">
-		      { temperatures }
-	      </section>
+	      
+		      <div>
+			      <h1 className="heading heading__primary">Current Location  { this.state.currentCity }</h1>
+			      <h1 className="heading heading__secondary">Weather Forecast for the next 5 days in { this.state.currentCity }</h1>
+			      <section className="cards">
+				      { temperatures }
+			      </section>
+		
+		      </div>
 	      <hr/>
-	      
 	
-	 
-	      
+	      <Map
+		      isMarkerShown
+		      lat={this.state.lat}
+		      lon={this.state.long}
+		      googleMapURL={BASE_GMAPURL}
+		      loadingElement={<div style={{ height: `100%` }} />}
+		      containerElement={<div style={{ height: `400px` }} />}
+		      mapElement={<div style={{ height: `100%` }} />}
+	      />
+
+
+
+
+
       </div>
     );
   }
