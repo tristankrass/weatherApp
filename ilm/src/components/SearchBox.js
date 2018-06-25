@@ -7,7 +7,7 @@ const SearchBox = ({change, value}) => (
 				type="text"
 				value={value}
 				onChange={change}
-				placeholder="Type a city"
+				placeholder="Find a city"
 			/>
 		
 	</div>

@@ -10,7 +10,7 @@ Ilmateate app
 4. Lemmikutesse lisamine ja vaatamine (ei pea baasi lisama)
 
 Boonus:
-1. Näitab google mapsil asukoh sdsata
+1. Näitab google mapsil asukohta
 
 Tehnilised nõuded:
 1. React

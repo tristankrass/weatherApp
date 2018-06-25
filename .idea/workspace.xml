@@ -2,8 +2,35 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a21ed004-d42b-42fb-8f1a-92faab52c202" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/ilm/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/ilm/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ilm/src/components/FavCity.js" beforeDir="false" afterPath="$PROJECT_DIR$/ilm/src/components/FavCity.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ilm/src/assets/scss/_spinner.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ilm/src/components/CityNotFound.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ilm/src/components/CurrentLocation.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ilm/src/components/Map.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ilm/src/components/Spinner.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ilm/src/components/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ilm/src/containers/CurrentLocation.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ilm/src/containers/FavouriteCities.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ilm/src/containers/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ilm/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/ilm/src/containers/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ilm/src/assets/scss/_base.scss" beforeDir="false" afterPath="$PROJECT_DIR$/ilm/src/assets/scss/_base.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ilm/src/assets/scss/_button.scss" beforeDir="false" afterPath="$PROJECT_DIR$/ilm/src/assets/scss/_button.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ilm/src/assets/scss/_card.scss" beforeDir="false" afterPath="$PROJECT_DIR$/ilm/src/assets/scss/_card.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ilm/src/assets/scss/_input.scss" beforeDir="false" afterPath="$PROJECT_DIR$/ilm/src/assets/scss/_input.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ilm/src/assets/scss/_saveFavourite.scss" beforeDir="false" afterPath="$PROJECT_DIR$/ilm/src/assets/scss/_saveFavourite.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ilm/src/assets/scss/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/ilm/src/assets/scss/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ilm/src/assets/scss/main.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/ilm/src/assets/scss/main.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ilm/src/assets/scss/main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/ilm/src/assets/scss/main.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ilm/src/components/Button.js" beforeDir="false" afterPath="$PROJECT_DIR$/ilm/src/components/Button.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ilm/src/components/FavCity.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ilm/src/components/SaveFavourite.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ilm/src/components/SearchBox.js" beforeDir="false" afterPath="$PROJECT_DIR$/ilm/src/components/SearchBox.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ilm/src/helpers/Auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/ilm/src/helpers/Auth.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ilm/src/helpers/utilities.js" beforeDir="false" afterPath="$PROJECT_DIR$/ilm/src/helpers/utilities.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ilm/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/ilm/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.yarn-integrity" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.yarn-integrity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -17,11 +44,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="App.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/ilm/src/App.js">
+      <file leaf-file-name="FavouriteCities.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ilm/src/containers/FavouriteCities.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="58" column="47" selection-start-line="58" selection-start-column="47" selection-end-line="58" selection-end-column="47" />
+            <state relative-caret-position="815">
+              <caret line="88" column="16" selection-start-line="88" selection-start-column="16" selection-end-line="88" selection-end-column="16" />
               <folding>
                 <element signature="e#0#41#0" expanded="true" />
               </folding>
@@ -29,23 +56,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="FavCity.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ilm/src/components/FavCity.js">
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/ilm/src/components/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+            <state relative-caret-position="120">
+              <caret line="4" column="35" selection-start-line="4" selection-start-column="35" selection-end-line="4" selection-end-column="35" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SaveFavourite.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ilm/src/components/SaveFavourite.js">
+      <file leaf-file-name="_button.scss" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ilm/src/assets/scss/_button.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
-              <folding>
-                <element signature="e#0#26#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="780">
+              <caret line="26" selection-start-line="26" selection-end-line="26" />
             </state>
           </provider>
         </entry>
@@ -53,35 +77,8 @@
       <file leaf-file-name="_saveFavourite.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ilm/src/assets/scss/_saveFavourite.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="6" column="18" lean-forward="true" selection-start-line="6" selection-start-column="18" selection-end-line="6" selection-end-column="18" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="utilities.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ilm/src/helpers/utilities.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="9" column="36" selection-start-line="9" selection-start-column="36" selection-end-line="9" selection-end-column="36" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="main.scss" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ilm/src/assets/scss/main.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="7" column="22" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_card.scss" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ilm/src/assets/scss/_card.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="6" column="30" selection-start-line="6" selection-start-column="30" selection-end-line="6" selection-end-column="30" />
+            <state relative-caret-position="630">
+              <caret line="21" column="33" selection-start-line="21" selection-start-column="33" selection-end-line="21" selection-end-column="33" />
             </state>
           </provider>
         </entry>
@@ -95,20 +92,46 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_base.scss" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ilm/src/assets/scss/_base.scss">
+      <file leaf-file-name="App.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ilm/src/containers/App.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="9" column="17" selection-start-line="9" selection-start-column="11" selection-end-line="9" selection-end-column="17" />
+            <state relative-caret-position="180">
+              <caret line="6" selection-start-line="6" selection-end-line="6" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Button.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ilm/src/components/Button.js">
+      <file leaf-file-name="CurrentLocation.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ilm/src/containers/CurrentLocation.js">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file leaf-file-name="CurrentLocation.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ilm/src/components/CurrentLocation.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="5" column="16" lean-forward="true" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="16" />
+            <state relative-caret-position="90">
+              <caret line="3" selection-start-line="3" selection-end-line="3" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="utilities.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ilm/src/helpers/utilities.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="270">
+              <caret line="9" selection-start-line="9" selection-end-line="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Spinner.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ilm/src/components/Spinner.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="330">
+              <caret line="11" column="22" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
             </state>
           </provider>
         </entry>
@@ -128,6 +151,15 @@
       <find>Sisesta</find>
       <find>consol</find>
       <find>sear</find>
+      <find>getI</find>
+      <find>new</find>
+      <find>setTim</find>
+      <find>Curr</find>
+      <find>fet</find>
+      <find>updat</find>
+      <find>updateCity</find>
+      <find>Current</find>
+      <find>CurrentLocatio</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -144,25 +176,36 @@
         <option value="$PROJECT_DIR$/ilm/src/assets/scss/_logo.scss" />
         <option value="$PROJECT_DIR$/ilm/public/index.html" />
         <option value="$PROJECT_DIR$/ilm/.gitignore" />
-        <option value="$PROJECT_DIR$/ilm/src/index.js" />
         <option value="$PROJECT_DIR$/ilm/src/Auth.js" />
         <option value="$PROJECT_DIR$/ilm/src/components/dailyWeatherComponent.js" />
         <option value="$PROJECT_DIR$/ilm/src/assets/scss/_typography.scss" />
-        <option value="$PROJECT_DIR$/ilm/src/components/SearchBox.js" />
-        <option value="$PROJECT_DIR$/ilm/src/assets/scss/_input.scss" />
-        <option value="$PROJECT_DIR$/ilm/src/assets/scss/_button.scss" />
-        <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/ilm/src/assets/scss/_card.scss" />
         <option value="$PROJECT_DIR$/ilm/src/components/dailyWeatherForecast.js" />
-        <option value="$PROJECT_DIR$/ilm/src/assets/scss/_base.scss" />
-        <option value="$PROJECT_DIR$/ilm/src/helpers/utilities.js" />
-        <option value="$PROJECT_DIR$/ilm/src/components/Button.js" />
         <option value="$PROJECT_DIR$/ilm/src/assets/scss/SaveFavourite.scss" />
-        <option value="$PROJECT_DIR$/ilm/src/assets/scss/main.scss" />
         <option value="$PROJECT_DIR$/ilm/src/components/SaveFavourite.js" />
-        <option value="$PROJECT_DIR$/ilm/src/assets/scss/_saveFavourite.scss" />
-        <option value="$PROJECT_DIR$/ilm/src/components/FavCity.js" />
+        <option value="$PROJECT_DIR$/ilm/src/helpers/Auth.js" />
+        <option value="$PROJECT_DIR$/ilm/src/assets/scss/_input.scss" />
+        <option value="$PROJECT_DIR$/ilm/src/components/Map.js" />
+        <option value="$PROJECT_DIR$/ilm/src/assets/scss/_card.scss" />
+        <option value="$PROJECT_DIR$/ilm/src/assets/scss/_base.scss" />
+        <option value="$PROJECT_DIR$/ilm/src/components/Button.js" />
+        <option value="$PROJECT_DIR$/ilm/src/assets/scss/main.scss" />
         <option value="$PROJECT_DIR$/ilm/src/App.js" />
+        <option value="$PROJECT_DIR$/ilm/src/components/SearchBox.js" />
+        <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/ilm/src/containers/index.js" />
+        <option value="$PROJECT_DIR$/ilm/src/index.js" />
+        <option value="$PROJECT_DIR$/ilm/src/components/FavCity.js" />
+        <option value="$PROJECT_DIR$/ilm/src/components/Spinner.js" />
+        <option value="$PROJECT_DIR$/ilm/src/assets/scss/_spinner.scss" />
+        <option value="$PROJECT_DIR$/ilm/src/components/CityNotFound.js" />
+        <option value="$PROJECT_DIR$/ilm/src/helpers/utilities.js" />
+        <option value="$PROJECT_DIR$/ilm/src/assets/scss/_button.scss" />
+        <option value="$PROJECT_DIR$/ilm/src/assets/scss/_saveFavourite.scss" />
+        <option value="$PROJECT_DIR$/ilm/src/containers/FavouriteCities.js" />
+        <option value="$PROJECT_DIR$/ilm/src/components/CurrentLocation.js" />
+        <option value="$PROJECT_DIR$/ilm/src/containers/CurrentLocation.js" />
+        <option value="$PROJECT_DIR$/ilm/src/containers/App.js" />
+        <option value="$PROJECT_DIR$/ilm/src/components/index.js" />
       </list>
     </option>
   </component>
@@ -174,24 +217,24 @@
   </component>
   <component name="NodeModulesDirectoryManager">
     <handled-path value="$PROJECT_DIR$/ilm/node_modules" />
+    <handled-path value="$PROJECT_DIR$/node_modules" />
   </component>
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths>
       <path value="$PROJECT_DIR$/ilm/package.json" />
+      <path value="$PROJECT_DIR$/package.json" />
     </packageJsonPaths>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1956" />
-    <option name="y" value="23" />
-    <option name="width" value="1920" />
-    <option name="height" value="1177" />
+  <component name="ProjectFrameBounds" extendedState="6" fullScreen="true">
+    <option name="x" value="3018" />
+    <option name="width" value="822" />
+    <option name="height" value="1200" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -245,12 +288,20 @@
               <item name="WeatherApp" type="462c0819:PsiDirectoryNode" />
               <item name="ilm" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="containers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="WeatherApp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="WeatherApp" type="462c0819:PsiDirectoryNode" />
+              <item name="ilm" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="helpers" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -261,16 +312,16 @@
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/ilm/public" />
-      <recent name="$PROJECT_DIR$/ilm/src" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/ilm/src/containers" />
       <recent name="$PROJECT_DIR$/ilm/src/assets/images" />
       <recent name="$PROJECT_DIR$/ilm/src/helpers" />
       <recent name="$PROJECT_DIR$/ilm/src/assets" />
       <recent name="$PROJECT_DIR$/ilm/src/components" />
-      <recent name="$PROJECT_DIR$/ilm/src/components/SearchBox" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/ilm/public" />
+      <recent name="$PROJECT_DIR$/ilm/src" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -301,28 +352,32 @@
       <workItem from="1529658711122" duration="5000" />
       <workItem from="1529667418551" duration="2920000" />
       <workItem from="1529680719770" duration="2235000" />
-      <workItem from="1529733028165" duration="15656000" />
+      <workItem from="1529733028165" duration="15946000" />
+      <workItem from="1529752721750" duration="368000" />
+      <workItem from="1529755648729" duration="2264000" />
+      <workItem from="1529846909902" duration="4338000" />
+      <workItem from="1529859727327" duration="2247000" />
+      <workItem from="1529909697801" duration="13211000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="33448000" />
+    <option name="totallyTimeSpent" value="56166000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1921" y="23" width="1920" height="1177" extended-state="6" />
+    <frame x="1920" y="0" width="1920" height="1200" extended-state="6" />
     <editor active="true" />
     <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49938348" visible="true" weight="0.18477103" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3287037" />
-      <window_info anchor="bottom" id="Version Control" order="10" />
-      <window_info anchor="right" id="Mongo Explorer" order="3" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.24907407" />
-      <window_info anchor="bottom" id="RNConsole" order="8" weight="0.32962963" />
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49938348" visible="true" weight="0.18423855" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32962963" />
+      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.328" />
+      <window_info anchor="bottom" id="Version Control" order="10" />
       <window_info id="Structure" order="1" sideWeight="0.50061655" side_tool="true" weight="0.18423855" />
+      <window_info anchor="right" id="Mongo Explorer" order="3" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.21777777" />
+      <window_info anchor="bottom" id="RNConsole" order="8" weight="0.32962963" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -331,6 +386,7 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32962963" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -341,76 +397,14 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="2" />
+      <option name="time" value="5" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/ilm/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="4" column="11" lean-forward="true" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ilm/src/assets/scss/_base.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="3" column="14" selection-start-line="3" selection-start-column="14" selection-end-line="3" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ilm/src/assets/scss/_input.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="17" column="17" selection-start-line="17" selection-start-column="17" selection-end-line="17" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ilm/src/assets/scss/_logo.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ilm/src/assets/scss/_typography.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ilm/public/favicon.ico">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ilm/public/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="690">
-          <caret line="23" column="9" lean-forward="true" selection-start-line="23" selection-start-column="9" selection-end-line="23" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ilm/src/components/SearchBox.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="3" column="40" selection-start-line="3" selection-start-column="40" selection-end-line="3" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ilm/src/helpers/Auth.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ilm/src/App.js">
+    <entry file="file://$PROJECT_DIR$/ilm/src/containers/App.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1080">
           <caret line="41" column="4" selection-start-line="41" selection-start-column="4" selection-end-line="41" selection-end-column="4" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -471,13 +465,6 @@
     <entry file="file://$PROJECT_DIR$/ilm/src/assets/scss/_animations.scss">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/ilm/src/assets/scss/_logo.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ilm/public/favicon.ico">
       <provider selected="true" editor-type-id="images" />
     </entry>
@@ -523,13 +510,60 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ilm/src/App.css" />
-    <entry file="file://$PROJECT_DIR$/ilm/src/index.js">
+    <entry file="file://$PROJECT_DIR$/ilm/src/assets/scss/_typography.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="2" selection-start-line="2" selection-end-line="2" />
+        <state relative-caret-position="240">
+          <caret line="8" column="1" lean-forward="true" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/yarn.lock">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ilm/src/assets/scss/SaveFavourite.scss" />
+    <entry file="file://$PROJECT_DIR$/ilm/src/assets/scss/_input.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ilm/src/assets/scss/_card.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="5" column="19" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ilm/src/assets/scss/_base.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="302">
+          <caret line="40" column="32" selection-start-line="40" selection-start-column="32" selection-end-line="40" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ilm/src/components/Button.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="2" column="36" selection-start-line="2" selection-start-column="36" selection-end-line="2" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ilm/src/assets/scss/main.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="8" column="16" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ilm/src/assets/scss/_logo.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ilm/src/components/SaveFavourite.js" />
     <entry file="file://$PROJECT_DIR$/ilm/src/App.test.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -538,63 +572,124 @@
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="170">
             <caret line="1010" selection-start-line="1010" selection-end-line="1010" />
+            <folding>
+              <element signature="e#0#26#0" expanded="true" />
+              <element signature="e#0#35#0" expanded="true" />
+              <element signature="e#0#26#0" expanded="true" />
+              <element signature="e#0#26#0" expanded="true" />
+              <element signature="e#0#26#0" expanded="true" />
+              <element signature="e#0#28#0" expanded="true" />
+              <element signature="e#0#28#0" expanded="true" />
+            </folding>
           </first_editor>
           <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ilm/src/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ilm/src/components/FavCity.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="4" column="44" selection-start-line="4" selection-start-column="44" selection-end-line="4" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ilm/src/components/CityNotFound.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="4" column="27" selection-start-line="4" selection-start-column="27" selection-end-line="4" selection-end-column="27" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ilm/src/helpers/Auth.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
-          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+          <caret line="3" column="63" lean-forward="true" selection-start-line="3" selection-start-column="63" selection-end-line="3" selection-end-column="63" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ilm/src/assets/scss/_typography.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="8" column="1" lean-forward="true" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ilm/src/assets/scss/_input.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="15" column="22" lean-forward="true" selection-start-line="15" selection-start-column="22" selection-end-line="15" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ilm/src/components/SearchBox.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="2" column="33" selection-start-line="2" selection-start-column="33" selection-end-line="2" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/yarn.lock">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="360">
-            <caret line="12" column="35" selection-start-line="12" selection-start-column="35" selection-end-line="12" selection-end-column="35" />
+          <first_editor relative-caret-position="480">
+            <caret line="16" column="24" lean-forward="true" selection-start-line="16" selection-start-column="24" selection-end-line="16" selection-end-column="24" />
           </first_editor>
           <second_editor />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ilm/src/assets/scss/_button.scss">
+    <entry file="file://$PROJECT_DIR$/ilm/src/components/Map.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="6" lean-forward="true" selection-start-column="6" selection-end-column="6" />
+        <state relative-caret-position="240">
+          <caret line="8" column="16" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="16" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ilm/src/assets/scss/_card.scss">
+    <entry file="file://$PROJECT_DIR$/ilm/src/assets/scss/_spinner.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="6" column="30" selection-start-line="6" selection-start-column="30" selection-end-line="6" selection-end-column="30" />
+        <state relative-caret-position="300">
+          <caret line="10" column="12" selection-start-line="10" selection-start-column="12" selection-end-line="10" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ilm/src/components/SearchBox.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="9" column="34" selection-start-line="9" selection-start-column="34" selection-end-line="9" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ilm/src/components/Spinner.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="11" column="22" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ilm/src/helpers/utilities.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ilm/src/containers/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="1" column="35" selection-start-line="1" selection-start-column="35" selection-end-line="1" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ilm/src/assets/scss/_button.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="780">
+          <caret line="26" selection-start-line="26" selection-end-line="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ilm/src/assets/scss/_saveFavourite.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="630">
+          <caret line="21" column="33" selection-start-line="21" selection-start-column="33" selection-end-line="21" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ilm/src/containers/FavouriteCities.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="815">
+          <caret line="88" column="16" selection-start-line="88" selection-start-column="16" selection-end-line="88" selection-end-column="16" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -605,68 +700,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ilm/src/assets/scss/_base.scss">
+    <entry file="file://$PROJECT_DIR$/ilm/src/components/CurrentLocation.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="9" column="17" selection-start-line="9" selection-start-column="11" selection-end-line="9" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ilm/src/helpers/utilities.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="9" column="36" selection-start-line="9" selection-start-column="36" selection-end-line="9" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ilm/src/components/Button.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="5" column="16" lean-forward="true" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ilm/src/assets/scss/SaveFavourite.scss">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ilm/src/assets/scss/main.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="7" column="22" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ilm/src/assets/scss/_saveFavourite.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="6" column="18" lean-forward="true" selection-start-line="6" selection-start-column="18" selection-end-line="6" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ilm/src/components/SaveFavourite.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+        <state relative-caret-position="90">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ilm/src/components/FavCity.js">
+    <entry file="file://$PROJECT_DIR$/ilm/src/containers/CurrentLocation.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ilm/src/containers/App.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+        <state relative-caret-position="180">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ilm/src/App.js">
+    <entry file="file://$PROJECT_DIR$/ilm/src/components/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="58" column="47" selection-start-line="58" selection-start-column="47" selection-end-line="58" selection-end-column="47" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="120">
+          <caret line="4" column="35" selection-start-line="4" selection-start-column="35" selection-end-line="4" selection-end-column="35" />
         </state>
       </provider>
     </entry>

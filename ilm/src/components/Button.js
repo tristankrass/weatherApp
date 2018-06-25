@@ -1,8 +1,8 @@
 import React from "react";
 
-const Button = ({newCity}) => {
+const Button = ({newCity, longEnough}) => {
 	return (
-		<button onClick={newCity} className="btn" >
+		<button disabled={longEnough} onClick={newCity} className="btn" >
 			Find new location
 		</button>
 	)
