@@ -2,7 +2,7 @@
 
 # dependencies
 /node_modules
-src/Auth.js
+src/helpers/Auth.js
 # testing
 /coverage
 

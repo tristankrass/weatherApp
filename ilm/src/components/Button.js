@@ -2,8 +2,8 @@ import React from "react";
 
 const Button = ({newCity, longEnough}) => {
 	return (
-		<button disabled={longEnough} onClick={newCity} className="btn" >
-			Find new location
+		<button disabled={longEnough} onClick={newCity} className="btn btn__search" >
+			Search
 		</button>
 	)
 };

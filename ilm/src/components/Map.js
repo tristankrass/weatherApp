@@ -5,10 +5,9 @@ import { withScriptjs, withGoogleMap, GoogleMap, Marker } from "react-google-map
 const Map = withScriptjs(withGoogleMap((props) =>
 	<GoogleMap
 		defaultZoom={8}
-		defaultCenter={{ lat: 59.4372, lng: 24.7454}}
-	
+		defaultCenter={{ lat: props.lat, lng: props.lon}}
 	>
-		{props.isMarkerShown && <Marker position={{ lat: 59.4372, lng: 24.7454}} />}
+		{props.isMarkerShown && <Marker position={{ lat: props.lat, lng: props.lon}} />}
 	</GoogleMap>
 ));
 export default Map;

@@ -10,8 +10,8 @@ import {FavouriteCities, CurrentLocation} from "./index";
 
 class App extends Component {
 	state = {
-		lat: null,
-		long: null,
+		lat: 59.436962,
+		long: 24.753574,
 		todaysTemp: null,
 		todaysDesc: "",
 		showCities: false,
@@ -70,8 +70,7 @@ class App extends Component {
 					return value.json()
 				})
 				.then(data => {
-					console.log(data.city.coord.lat)
-					console.log(data.city.coord.lon)
+					console.log(data);
 					this.setState({
 						lat: data.city.coord.lat,
 						long: data.city.coord.lon,
@@ -137,11 +136,13 @@ class App extends Component {
 	      { this.state.isLoading ? <Spinner/> : null }
 	     
 	      { this.state.todaysTemp }
-	      <SearchBox change={this.handleInputValue} value={this.state.city}/>
-	
+	      <div className="searchBar searchBar__input">
+		      <SearchBox change={this.handleInputValue} value={this.state.city}/>
+		      <Button newCity={ this.handleCallToDatabase } longEnough={!this.state.city.length} />
+	      </div>
+	    
 	      { this.state.Error ? <CityNotFound /> : null }
 	      <div className="searchBar">
-		      <Button newCity={ this.handleCallToDatabase } longEnough={!this.state.city.length} />
 		      <CurrentLocation callToDatabaseWithCoords={this.callToDatabaseWithCoords}/>
 		      { this.state.showCities ?
 			      <button onClick={this.closeCities} className="btn">Close Favourite Cities</button>:

@@ -27,9 +27,13 @@ body {
   flex-direction: column; }
 
 .searchBar {
+  margin-top: 3rem;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center; }
+
+.searchBar__input {
+  justify-content: center; }
 
 body {
   font-family: 'Open Sans', sans-serif; }
@@ -81,7 +85,7 @@ body {
       flex-flow: wrap; } }
 
 .DailyWeatherCard {
-  background-color: var(--gray);
+  background-color: #6DD5FA;
   border: 1px solid var(--pink);
   height: 20rem;
   width: 15rem;
@@ -95,8 +99,9 @@ body {
 .btn {
   border: 1px solid var(--dark);
   padding: 1rem;
-  font-size: 3rem;
-  color: var(--dark);
+  background-color: var(--gray);
+  font-size: 1.5rem;
+  color: white;
   cursor: pointer;
   border-radius: 2rem;
   outline: none; }
@@ -105,15 +110,22 @@ body {
     color: white; }
 
 .btn__remove {
-  font-size: 1rem; }
+  font-size: 1rem;
+  margin: .5rem 0;
+  padding: .3rem; }
 
 .btn_currentLocation {
-  padding: 0;
+  padding: 1rem;
   font-size: 1.5rem; }
 
 .btn_addFavourite {
   font-size: 1.5rem;
-  padding: 0; }
+  padding: 1rem;
+  margin-top: 1rem; }
+
+.btn__search {
+  font-size: 1.5rem;
+  padding: 1rem; }
 
 .saveFavourite {
   margin: 2rem;
