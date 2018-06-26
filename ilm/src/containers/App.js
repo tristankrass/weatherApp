@@ -3,7 +3,7 @@ import logo from '../assets/images/logo.svg';
 import '../assets/scss/main.css';
 import {geolocated} from 'react-geolocated';
 import {Button, Spinner, DailyWeatherForecast, SearchBox, Map} from "../components";
-import {AUTH, BASE_GMAPURL} from "../helpers/Auth";
+import {AUTH} from "../config";
 import * as utilities from "../helpers/utilities";
 import CityNotFound from "../components/CityNotFound";
 import {FavouriteCities, CurrentLocation} from "./index";
@@ -12,8 +12,6 @@ class App extends Component {
 	state = {
 		lat: 59.436962,
 		long: 24.753574,
-		todaysTemp: null,
-		todaysDesc: "",
 		showCities: false,
 		Error: false,
 		isLoading: false,
@@ -53,7 +51,7 @@ class App extends Component {
 	};
 	
 	handleCallToDatabase = () => {
-		const BASE_URL = `http://api.openweathermap.org/data/2.5/forecast?q=${this.state.city}&units=metric&appid=${AUTH}`;
+		const BASE_URL = `https://api.openweathermap.org/data/2.5/forecast?q=${this.state.city}&units=metric&appid=${AUTH}`;
 		if (this.state.city.length >= 2 ) {
 			fetch(BASE_URL)
 				.then(value => {
@@ -135,7 +133,6 @@ class App extends Component {
 	      </div>
 	      { this.state.isLoading ? <Spinner/> : null }
 	     
-	      { this.state.todaysTemp }
 	      <div className="searchBar searchBar__input">
 		      <SearchBox change={this.handleInputValue} value={this.state.city}/>
 		      <Button newCity={ this.handleCallToDatabase } longEnough={!this.state.city.length} />
@@ -148,7 +145,6 @@ class App extends Component {
 			      <button onClick={this.closeCities} className="btn">Close Favourite Cities</button>:
 			      <button onClick={ this.showCities} className="btn ">See your favourite Cities</button>
 		      }
-		      
 	      </div>
 	      { this.state.showCities ? <FavouriteCities cities={this.state.currentCity} closeCities={this.closeCities} currentCity={this.state.currentCity}/>
 		      : null }
@@ -162,7 +158,6 @@ class App extends Component {
 			      <section className="cards">
 				      { temperatures }
 			      </section>
-		
 		      </div>
 	      <hr/>
 	
@@ -170,7 +165,7 @@ class App extends Component {
 		      isMarkerShown
 		      lat={this.state.lat}
 		      lon={this.state.long}
-		      googleMapURL={BASE_GMAPURL}
+		      googleMapURL={utilities.BASE_GMAPURL}
 		      loadingElement={<div style={{ height: `100%` }} />}
 		      containerElement={<div style={{ height: `400px` }} />}
 		      mapElement={<div style={{ height: `100%` }} />}

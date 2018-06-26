@@ -5,6 +5,7 @@
 src/helpers/Auth.js
 # testing
 /coverage
+config.js
 
 # production
 /build
