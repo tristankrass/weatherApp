@@ -1,0 +1,23 @@
+{
+  "name": "ilm",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "install": "^0.12.0",
+    "npm": "^6.1.0",
+    "react": "^16.4.1",
+    "react-dom": "^16.4.1",
+    "react-geolocated": "^2.4.0",
+    "react-google-maps": "^9.4.5",
+    "react-particles-js": "^2.2.0",
+    "react-scripts": "1.1.4",
+    "react-timeout": "^1.1.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "now-start": "serve --single ./build",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  }
+}

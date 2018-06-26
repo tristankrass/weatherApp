@@ -1,0 +1,21 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+
+}
+
+.heading {
+  color: var(--dark);
+
+}
+.heading__primary {
+  font-size: 4rem;
+  color: var(--dark);
+
+}
+.heading__secondary {
+  font-size: 2rem;
+}
+.heading__warning {
+  text-align: center;
+  color: crimson;
+}

@@ -1,0 +1,30 @@
+.searchBox {
+  display: flex;
+  justify-content: center;
+}
+.searchBox__input {
+  font-size: 2rem;
+  height: 3rem;
+  background-color: transparent;
+  outline: none;
+  color: var(--dark);
+  font-family: sans-serif;
+  padding: 1rem;
+  border-radius: 3rem;
+  border: 3px solid var(--pink);
+
+  &::placeholder {
+    font-family: inherit;
+    font-size: 2rem;
+    color: var(--dark);
+  }
+  &:active,
+  &:focus,
+  &:hover {
+    border: 3px solid var(--pink);
+  }
+
+  @include respond(phone){
+    padding: 2rem;
+  }
+}
