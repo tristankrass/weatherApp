@@ -2,6 +2,17 @@
 This is a free to use weather info for anyone who is intrested
 Instructions to follow.
 
+
+To fire Up the final product on your local machine.
+run serve -s build in your terminal.
+
+I hope you enjoy it.
+The final product can also be seen on 
+
+
+
+
+// Here are the things that this app resolves.
 Ilmateate app
 
 1. Saab näha praeguse asukoha ilmateadet
