@@ -1,4 +1,10 @@
 # WeatherApp
+
+NB! 
+If you want to see the final code then please go to the the branch called final.
+Maybe I did not have time to fix it just yet.
+
+
 This is a free to use weather info for anyone who is intrested
 Instructions to follow.
 
@@ -7,7 +13,8 @@ To fire Up the final product on your local machine.
 run serve -s build in your terminal.
 
 I hope you enjoy it.
-The final product can also be seen on 
+The final product can also be seen on https://weatherapp-1529648627121.firebaseapp.com/ here.
+
 
 
 
