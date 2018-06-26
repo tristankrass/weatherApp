@@ -19,7 +19,7 @@ To fire Up the final product on your local machine.
 run serve -s build in your terminal.
 
 I hope you enjoy it.
-The final product can also be seen on https://weatherapp-1529648627121.firebaseapp.com/ here.
+The final product can also be seen on https://ilmateade-9.firebaseapp.com/ here.
 
 
 
