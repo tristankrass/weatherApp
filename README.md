@@ -1,8 +1,14 @@
 # WeatherApp
 
 NB! 
-If you want to see the final code then please go to the the branch called final.
-Maybe I did not have time to fix it just yet.
+Here is how to make it work.
+First Run npm install to download packages.
+Secondly you have to add config.js file to src folder
+with necessary api keys. There is on api key for openweather API
+ant the other one is google maps.
+
+Clone and Enjoy.
+Have a great Day!
 
 
 This is a free to use weather info for anyone who is intrested
