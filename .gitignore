@@ -4,3 +4,4 @@ firebase.json
 yarn-error.log
 yarn.lock
 .idea
+functions/
