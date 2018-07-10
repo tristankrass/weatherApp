@@ -46,20 +46,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/index.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="81">
               <caret line="3" column="39" selection-start-line="3" selection-start-column="33" selection-end-line="3" selection-end-column="39" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="yarn.lock" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/yarn.lock">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-43562">
-              <caret line="79" selection-end-line="8528" />
             </state>
           </provider>
         </entry>
@@ -117,6 +108,8 @@
         <option value="$PROJECT_DIR$/src/helpers/utilities.js" />
         <option value="$PROJECT_DIR$/src/containers/App.js" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/src/yarn.lock.js" />
+        <option value="$PROJECT_DIR$/yarn.lock" />
       </list>
     </option>
   </component>
@@ -154,6 +147,11 @@
             <path>
               <item name="WeatherApp" type="b2602c69:ProjectViewProjectNode" />
               <item name="WeatherApp" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="WeatherApp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="WeatherApp" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -193,12 +191,12 @@
       <option name="presentableId" value="Default" />
       <updated>1530566634196</updated>
       <workItem from="1530566635724" duration="7319000" />
-      <workItem from="1531221366834" duration="763000" />
+      <workItem from="1531221366834" duration="1046000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8082000" />
+    <option name="totallyTimeSpent" value="8365000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="247" y="1241" width="1214" height="1027" extended-state="0" />
@@ -209,9 +207,9 @@
       <window_info id="npm" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32903227" />
       <window_info anchor="right" id="Mongo Explorer" order="3" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.5" />
+      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.5" />
       <window_info anchor="bottom" id="RNConsole" order="7" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.27986348" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27986348" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
@@ -393,20 +391,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="81">
-          <caret line="3" column="39" selection-start-line="3" selection-start-column="33" selection-end-line="3" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/functions/index.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/yarn.lock.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/yarn.lock">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-43562">
-          <caret line="79" selection-end-line="8528" />
+        <state relative-caret-position="6597">
+          <caret line="8522" column="22" selection-start-line="8522" selection-start-column="22" selection-end-line="8522" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="81">
+          <caret line="3" column="39" selection-start-line="3" selection-start-column="33" selection-end-line="3" selection-end-column="39" />
         </state>
       </provider>
     </entry>

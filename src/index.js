@@ -1,6 +1,6 @@
-import React from 'react';
+import React    from 'react';
 import ReactDOM from 'react-dom';
-import App from './containers/App';
-import Places from "./containers/places";
+import App      from './containers/App';
 
-ReactDOM.render(<Places />, document.getElementById('root'));
+
+ReactDOM.render( <App/>, document.getElementById( 'root' ) );
