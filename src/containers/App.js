@@ -53,17 +53,14 @@ class App extends Component {
 	handleCallToDatabase = () => {
 		const BASE_URL = `https://api.openweathermap.org/data/2.5/forecast?q=${this.state.city}&units=metric&appid=${AUTH}`;
 		if (this.state.city.length >= 2 ) {
+			this.setState({ // Lisa loadern enne fetchi
+				isLoading: true
+			});
 			fetch(BASE_URL)
 				.then(value => {
-					this.setState({
-						isLoading: true
-					});
 					if (!value.ok) {
-						this.setState({
-							Error: true,
-							city: "",
-							isLoading: false
-						})
+						throw new Error;
+						
 					}
 					return value.json()
 				})
@@ -77,11 +74,13 @@ class App extends Component {
 						currentCity: data.city.name,
 						city: "",
 						Error: false,
-						isLoading: false
 					});
 				} )
-				.catch(err => {
-					return <CityNotFound errorMessage={err}/>
+				.catch(() => {
+					this.setState({
+						Error: true,
+						city: "",
+					});
 				})
 				.finally(() => {
 					this.setState({
@@ -126,7 +125,7 @@ class App extends Component {
 	      
 	      <Logo/>
 	
-	      { this.state.Error ? <CityNotFound /> : null }
+	      { this.state.Error && <CityNotFound /> }
 	      
 	      { this.state.isLoading ? <Spinner/> : null }
 	      <SearchBox change={this.handleInputValue}
@@ -144,11 +143,11 @@ class App extends Component {
 	      </div>
 	      
 	      
-	      { this.state.showCities ? <FavouriteCities
+	      { this.state.showCities && <FavouriteCities
 			      cities={this.state.currentCity}
 			      closeCities={this.closeCities}
 			      currentCity={this.state.currentCity}/>
-		      : null }
+	      }
 			
 	     
 	      <hr style={ {marginTop: '3rem'}}/>
