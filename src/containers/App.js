@@ -1,11 +1,13 @@
-import React, { Component } from 'react';
+import React, { Component }                                   from 'react';
 import '../assets/scss/main.css';
-import {geolocated} from 'react-geolocated';
+import '../assets/scss/boot/bootstrap.css';
+import {geolocated}                                           from 'react-geolocated';
 import { Spinner, DailyWeatherForecast, SearchBox, Map, Logo} from "../components";
-import {AUTH} from "../config";
-import * as utilities from "../helpers/utilities";
-import CityNotFound from "../components/CityNotFound";
+import {API_KEY_FOR_WEATHER}              from "../config";
+import * as utilities                     from "../helpers/utilities";
+import CityNotFound                       from "../components/CityNotFound";
 import {FavouriteCities, CurrentLocation} from "./index";
+import Button                             from "../components/Button";
 
 class App extends Component {
 	state = {
@@ -18,7 +20,7 @@ class App extends Component {
 		currentCity: "Tallinn",
 		cities: [],
 		icons: [],
-		dates: [utilities.currentDate, utilities.currentDate1, utilities.currentDate2, utilities.currentDate3, utilities.currentDate4],
+		dates: [utilities.dates],
 		temperatures: [],
 	};
 	
@@ -26,7 +28,7 @@ class App extends Component {
 	
 	
 	callToDatabaseWithCoords = () => {
-		let url = `https://api.openweathermap.org/data/2.5/weather?lat=${this.props.coords.latitude}&lon=${this.props.coords.longitude}&units=metric&appid=${AUTH}`
+		let url = `https://api.openweathermap.org/data/2.5/weather?lat=${this.props.coords.latitude}&lon=${this.props.coords.longitude}&units=metric&appid=${API_KEY_FOR_WEATHER}`
 		fetch(url)
 			.then(res => {
 				this.setState({
@@ -51,9 +53,9 @@ class App extends Component {
 	};
 	
 	handleCallToDatabase = () => {
-		const BASE_URL = `https://api.openweathermap.org/data/2.5/forecast?q=${this.state.city}&units=metric&appid=${AUTH}`;
+		const BASE_URL = `https://api.openweathermap.org/data/2.5/forecast?q=${this.state.city}&units=metric&appid=${API_KEY_FOR_WEATHER}`;
 		if (this.state.city.length >= 2 ) {
-			this.setState({ // Lisa loadern enne fetchi
+			this.setState({
 				isLoading: true
 			});
 			fetch(BASE_URL)
@@ -89,7 +91,10 @@ class App extends Component {
 				});
 		}
 	};
-	
+	formSubmitHandler = (e) => {
+		e.preventDefault();
+		this.handleCallToDatabase();
+	}
 	showCities = () => {
 		this.setState({ showCities: true})
 	};
@@ -103,10 +108,12 @@ class App extends Component {
 		})
 	};
 	
-	
-	
 	componentDidMount() {
 		this.handleCallToDatabase();
+		if ( !this.state.dates ) {
+			console.log("Loading")
+		}
+		
 	};
 	
 	render() {
@@ -116,12 +123,12 @@ class App extends Component {
 					key={temp.dt}
 					icon={temp.weather[0].icon}
 					temperature={Math.floor(temp.main.temp)}
-					date={this.state.dates[idx] }
+					date={this.state.dates[0][idx]}
 					description={temp.weather[0].description}/>
 			)});
 		
     return (
-      <div className="layout">
+      <div className="container">
 	      
 	      <Logo/>
 	
@@ -129,6 +136,7 @@ class App extends Component {
 	      
 	      { this.state.isLoading ? <Spinner/> : null }
 	      <SearchBox change={this.handleInputValue}
+	                 formSubmitHandler={this.formSubmitHandler}
 	                 value={this.state.city}
 	                 newCity={ this.handleCallToDatabase }
 	                 longEnough={!this.state.city.length}/>
@@ -137,8 +145,8 @@ class App extends Component {
 	      <div className="searchBar">
 		      <CurrentLocation callToDatabaseWithCoords={this.callToDatabaseWithCoords}/>
 		      { this.state.showCities ?
-			      <button onClick={this.closeCities} className="btn">Close Favourite Cities</button>:
-			      <button onClick={ this.showCities} className="btn ">See your favourite Cities</button>
+			      <Button click={this.closeCities} text="Close Favourite Cities"/>:
+			      <Button click={ this.showCities} text="See your favourite Cities"/>
 		      }
 	      </div>
 	      
@@ -155,7 +163,7 @@ class App extends Component {
 		      <div>
 			      <h1 className="heading heading__primary">Current Location  { this.state.currentCity }</h1>
 			      <h1 className="heading heading__secondary">Weather Forecast for the next 5 days in { this.state.currentCity }</h1>
-			      <section className="cards">
+			      <section className="cards jumbotron bg-light border-info">
 				      { temperatures }
 			      </section>
 		      </div>
@@ -170,11 +178,6 @@ class App extends Component {
 		      containerElement={<div style={{ height: `400px` }} />}
 		      mapElement={<div style={{ height: `100%` }} />}
 	      />
-
-
-
-
-
       </div>
     );
   }

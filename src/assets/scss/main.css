@@ -169,6 +169,7 @@ body {
 .lds-ripple {
   display: inline-block;
   position: absolute;
+  z-index: 1000;
   left: 40%;
   top: 40%;
   width: 500px;

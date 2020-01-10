@@ -13,7 +13,7 @@ class CurrentLocation extends React.Component {
 				? <div>Geolocation is not enabled</div>
 				: this.props.coords
 					?
-						<button className="btn btn_currentLocation" onClick={ this.props.callToDatabaseWithCoords }>Get Your Local Weather Forecast</button>
+						<button className="btn-lg btn-outline-primary" onClick={ this.props.callToDatabaseWithCoords }>Get Your Local Weather Forecast</button>
 					: <div>
 						<Spinner/>
 					</div>;
