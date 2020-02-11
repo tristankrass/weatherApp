@@ -31,4 +31,4 @@ jobs:
       - name: Build & Deploy
         run: |
           REACT_APP_API_KEY_FOR_GMAPS=${{ SECRETS.REACT_APP_API_KEY_FOR_GMAPS }} REACT_APP_API_KEY_FOR_WEATHER=${{ SECRETS.REACT_APP_API_KEY_FOR_WEATHER }} yarn build
-          firebase deploy --only hosting --token ${{ SECRETS.FIREBASE_TOKEN }} --message "$FIREBASE_MESSAGE" 
+          firebase deploy --only hosting --token ${{ SECRETS.FIREBASE_TOKEN }} 
