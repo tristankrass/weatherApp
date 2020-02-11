@@ -1,5 +1,7 @@
 # WeatherApp
 
+Deployed on [firebase](https://ilmadd.firebaseapp.com)
+
 ## Use docker to run the app
 
 By using docker you don't need to install node on your local system. You just need docker and docker-compose.
@@ -32,7 +34,7 @@ Everything is currently built on top of the [OpenWeather API](https://openweathe
 1. Get your weather information about your current location
 2. Search for different weather forecasts.
 3. 5-day forecast
-4. Ability to save your favourite locations
+4. Ability to save your favourite locations (Currently saves to localstorage)
 5. Navigate using the google maps API
 
 ## Tech stack
