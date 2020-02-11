@@ -1,11 +1,23 @@
 # WeatherApp
 
-# Use docker to run the app
+## Use docker to run the app
+
+By using docker you don't need to install node on your local system. You just need docker and docker-compose.
 
 ```
 docker build -t reactapp .
-docker-compose run --rm service-ports reactapp
+docker-compose run --rm --service-ports reactapp
 ```
+
+once you are inside docker container run: 
+```
+yarn
+yarn start
+
+```
+`yarn` will install dependencies and `yarn start` will start the dev server on port 3000 inside the container
+and is curretly mapped to port 3000 on your local machine.  Navigate to port `http://localhost:3000/` and you
+should see the app running.
 
 ## Running the app
 Here is how to make it work.
