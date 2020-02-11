@@ -131,7 +131,6 @@ class App extends Component {
 		
     return (
       <div className="container">
-				<h2 style="display: none">HERE: {process.env.REACT_APP_API_KEY_FOR_WEATHER}</h2>
 	      <Logo/>
 	
 	      { this.state.Error && <CityNotFound /> }
