@@ -1,4 +1,5 @@
 # WeatherApp
+![Firebase Web CI](https://github.com/tristankrass/weatherApp/workflows/Firebase%20Web%20CI/badge.svg)
 
 Deployed on [firebase](https://ilmadd.firebaseapp.com)
 
