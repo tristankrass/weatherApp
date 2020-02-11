@@ -10,6 +10,9 @@
     "react-scripts": "1.1.4",
     "react-timeout": "^1.1.1"
   },
+  "devDependencies": {
+    "firebase-tools": "^7.7.0"
+  },
   "scripts": {
     "start": "react-scripts start",
     "now-start": "serve --single ./build",
