@@ -3,7 +3,7 @@ import '../assets/scss/main.css';
 import '../assets/scss/boot/bootstrap.css';
 import {geolocated}                                           from 'react-geolocated';
 import { Spinner, DailyWeatherForecast, SearchBox, Map, Logo} from "../components";
-import {API_KEY_FOR_WEATHER}              from "../config";
+// import {API_KEY_FOR_WEATHER}              from "../config";
 import * as utilities                     from "../helpers/utilities";
 import CityNotFound                       from "../components/CityNotFound";
 import {FavouriteCities, CurrentLocation} from "./index";
@@ -28,7 +28,8 @@ class App extends Component {
 	
 	
 	callToDatabaseWithCoords = () => {
-		let url = `https://api.openweathermap.org/data/2.5/weather?lat=${this.props.coords.latitude}&lon=${this.props.coords.longitude}&units=metric&appid=${API_KEY_FOR_WEATHER}`
+		// let url = `https://api.openweathermap.org/data/2.5/weather?lat=${this.props.coords.latitude}&lon=${this.props.coords.longitude}&units=metric&appid=${API_KEY_FOR_WEATHER}`
+		let url = `https://api.openweathermap.org/data/2.5/weather?lat=${this.props.coords.latitude}&lon=${this.props.coords.longitude}&units=metric&appid=${process.env.REACT_APP_API_KEY_FOR_WEATHER}`
 		fetch(url)
 			.then(res => {
 				this.setState({
@@ -53,7 +54,8 @@ class App extends Component {
 	};
 	
 	handleCallToDatabase = () => {
-		const BASE_URL = `https://api.openweathermap.org/data/2.5/forecast?q=${this.state.city}&units=metric&appid=${API_KEY_FOR_WEATHER}`;
+		// const BASE_URL = `https://api.openweathermap.org/data/2.5/forecast?q=${this.state.city}&units=metric&appid=${API_KEY_FOR_WEATHER}`;
+		const BASE_URL = `https://api.openweathermap.org/data/2.5/forecast?q=${this.state.city}&units=metric&appid=${process.env.REACT_APP_API_KEY_FOR_WEATHER}`;
 		if (this.state.city.length >= 2 ) {
 			this.setState({
 				isLoading: true
@@ -61,7 +63,7 @@ class App extends Component {
 			fetch(BASE_URL)
 				.then(value => {
 					if (!value.ok) {
-						throw new Error;
+						throw new Error();
 						
 					}
 					return value.json()
@@ -129,7 +131,7 @@ class App extends Component {
 		
     return (
       <div className="container">
-	      
+				<h2 style="display: none">HERE: {process.env.REACT_APP_API_KEY_FOR_WEATHER}</h2>
 	      <Logo/>
 	
 	      { this.state.Error && <CityNotFound /> }

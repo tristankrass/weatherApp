@@ -1,3 +1,7 @@
+.env
+# Read more about env files
+# https://create-react-app.dev/docs/title-and-meta-tags/#injecting-data-from-the-server-into-the-page
+
 /node_modules
 config.js
 

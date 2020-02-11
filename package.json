@@ -11,10 +11,12 @@
     "react-timeout": "^1.1.1"
   },
   "devDependencies": {
-    "firebase-tools": "^7.7.0"
+    "firebase-tools": "^7.7.0",
+    "serve": "^11.3.0"
   },
   "scripts": {
     "start": "react-scripts start",
+    "serve": "serve -s build",
     "now-start": "serve --single ./build",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
