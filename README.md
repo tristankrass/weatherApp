@@ -40,12 +40,12 @@ Everything is currently built on top of the [OpenWeather API](https://openweathe
 
 ## Tech stack
 1. React
-2. Bootstrap
 
 
 ## Todos 
-- [ ] Add Typescript
+- [x] Add Typescript
 - [ ] Nicer UI
 - [ ] Add database
 - [ ] PWA
 - [ ] Push notificatsions 
+- [ ] Refactoring the existing code

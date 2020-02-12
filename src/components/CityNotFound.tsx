@@ -1,6 +1,6 @@
-import React from "react";
+import React, { FunctionComponent } from "react";
 
-const CityNotFound = () => {
+const CityNotFound: FunctionComponent = () => {
 	return(
 		<h1 className="heading heading__warning" >
 			City not found

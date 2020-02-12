@@ -1,8 +1,8 @@
-import React from "react";
+import React, { FunctionComponent } from "react";
 import logo from "../assets/images/logo.svg";
 
 
-const Logo = () => {
+const Logo: FunctionComponent = () => {
 	return (
 		<div className="logo">
 			<img className="logo__img" src={logo} alt="Logo" />

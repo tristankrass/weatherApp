@@ -1,6 +1,6 @@
-import React from "react";
+import React, { FunctionComponent } from "react";
 
-const Spinner = (props) => {
+const Spinner:FunctionComponent = () => {
 	return (
 		<div className="lds-ripple">
 			<div></div>

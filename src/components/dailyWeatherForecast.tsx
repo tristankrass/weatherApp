@@ -1,11 +1,16 @@
-import React          from "react";
+import React, { FunctionComponent }          from "react";
 import rain           from "../assets/images/Raining.png";
 import sun            from "../assets/images/Sunny.png";
 import clouds         from "../assets/images/clouds.png";
 
+interface IDailyWeatherForecast { // Todo find the types for this function
+	temperature: any,
+	date: any,
+	description: any,
+	icon: any
+}
 
-
-const DailyWeatherForecast = ( { temperature, date, description, icon } ) => {
+const DailyWeatherForecast: FunctionComponent<IDailyWeatherForecast> = ( { temperature, date, description, icon } ) => {
 	let img = <img src={sun} alt="Cloudy" className="card-img-top"/>;
 	if ( icon.indexOf( "03d" ) !== - 1 ) {
 		img = <img src={clouds} alt="Cloudy" className="card-img-top"/>;
@@ -28,8 +33,6 @@ const DailyWeatherForecast = ( { temperature, date, description, icon } ) => {
 	if ( icon.indexOf( "10n" ) !== - 1 ) {
 		img = <img src={rain} alt="Rainy" className="card-img-top "/>;
 	}
-	
-	
 	
 	return (
 		<div className="card" style={{ width: "15rem", marginRight: "1rem" +

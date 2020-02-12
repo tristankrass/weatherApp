@@ -1,7 +1,6 @@
 import React from "react";
 
 const SearchBox = ( { change, value, newCity, longEnough, formSubmitHandler } ) => {
-	
 	return (
 		<form className="form-inline mt-5"
 		      style={ { width: "100vw" }}
@@ -19,11 +18,7 @@ const SearchBox = ( { change, value, newCity, longEnough, formSubmitHandler } ) 
 			        onClick={newCity}>
 				Search
 			</button>
-		
 		</form>
-	
-	
 	);
 };
-
 export default SearchBox;

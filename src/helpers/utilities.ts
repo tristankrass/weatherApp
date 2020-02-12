@@ -2,7 +2,7 @@
 
 const Month = new Date().getMonth() + 1;
 const Year = new Date().getFullYear();
-export const dates = [];
+export const dates: string[] = [];
 
 for( let day = new Date().getDate();  dates.length <= 4; day += 1) {
 	let monthAndYear = `.${Month}.${Year}`;

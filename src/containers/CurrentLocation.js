@@ -3,9 +3,6 @@ import {geolocated} from 'react-geolocated';
 import {Spinner} from "../components";
 
 class CurrentLocation extends React.Component {
-	
-	
-	
 	render() {
 		return !this.props.isGeolocationAvailable
 			? <div>Your browser does not support Geolocation</div>
