@@ -13,11 +13,11 @@ docker-compose run --rm --service-ports reactapp
 ```
 
 once you are inside docker container run: 
-```
+~~~
 yarn
 yarn start
+~~~
 
-```
 `yarn` will install dependencies and `yarn start` will start the dev server on port 3000 inside the container
 and is curretly mapped to port 3000 on your local machine.  Navigate to port `http://localhost:3000/` and you
 should see the app running.
@@ -41,3 +41,11 @@ Everything is currently built on top of the [OpenWeather API](https://openweathe
 ## Tech stack
 1. React
 2. Bootstrap
+
+
+## Todos 
+- [ ] Add Typescript
+- [ ] Nicer UI
+- [ ] Add database
+- [ ] PWA
+- [ ] Push notificatsions 

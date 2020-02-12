@@ -27,8 +27,11 @@ jobs:
       - name: yarn install
         run: |
           yarn
-      ## Build & Deploy
-      - name: Build & Deploy
+      ## Build 
+      - name: Build
         run: |
           REACT_APP_API_KEY_FOR_GMAPS=${{ SECRETS.REACT_APP_API_KEY_FOR_GMAPS }} REACT_APP_API_KEY_FOR_WEATHER=${{ SECRETS.REACT_APP_API_KEY_FOR_WEATHER }} yarn build
-          FIREBASE_TOKEN=${{ SECRETS.FIREBASE_TOKEN }} yarn deploy
+      ## Deploy
+      - name: Deploy
+          run: |
+            FIREBASE_TOKEN=${{ SECRETS.FIREBASE_TOKEN }} yarn deploy
