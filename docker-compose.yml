@@ -6,5 +6,5 @@ services:
     container_name: react-docker
     ports:
       - 3000:3000
-    volumes:
+    volumes: # seems not to be working on windows wsl2 for some reason
       - ./:/home/app
