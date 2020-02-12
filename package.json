@@ -18,7 +18,7 @@
   "scripts": {
     "start": "react-scripts start",
     "serve": "serve --single ./build",
-    "build": "GENERATE_SOURCEMAP=false react-scripts build && yarn delete-maps",
+    "build": "GENERATE_SOURCEMAP=false react-scripts build",
     "delete-maps": "rm ./build/static/js/*.map && rm ./build/static/css/*.map",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
