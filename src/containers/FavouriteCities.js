@@ -1,7 +1,14 @@
 import React, { Component } from "react";
 import star from "../assets/images/Star.svg";
 
+// interface IFavouriteCitiesState {
+// 	cities: any;
+// }
+// interface IFavouriteCitiesProps {
+// 	cities: any;
+// }
 
+// class FavouriteCities extends Component<IFavouriteCitiesProps, IFavouriteCitiesState> {
 class FavouriteCities extends Component {
 	state = {
 		newCity: this.props.cities,
@@ -29,11 +36,9 @@ class FavouriteCities extends Component {
 		this.setState({
 			cities
 		});
-
-	
 		localStorage.setItem("cities", JSON.stringify(cities));
-		
 	};
+	
 	deleteCity = (id) => {
 		let cities = [...this.state.cities];
 		const updatedCities = cities.filter(city =>
