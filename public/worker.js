@@ -1,4 +1,4 @@
-var CACHE_NAME = 'pwa-task-manager';
+var CACHE_NAME = 'ilmad.firebase';
 var urlsToCache = [
   '/',
   '/completed'
@@ -10,7 +10,7 @@ self.addEventListener('install', event => {
   event.waitUntil(
     caches.open(CACHE_NAME)
       .then(function(cache) {
-        console.log('Opened cache');
+        // console.log('Opened cache');
         return cache.addAll(urlsToCache);
       })
   );
