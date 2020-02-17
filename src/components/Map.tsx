@@ -1,8 +1,14 @@
-import React from "react";
+import React, { FunctionComponent, ComponentClass } from "react";
 
 import { withScriptjs, withGoogleMap, GoogleMap, Marker } from "react-google-maps"
 
-const Map = withScriptjs(withGoogleMap((props) =>
+interface IProps {
+	lat: string;
+	lon: string;
+	isMarkerShown: boolean;
+}
+
+const Map : ComponentClass = withScriptjs(withGoogleMap((props: any) =>
 	<GoogleMap
 		defaultZoom={8}
 		defaultCenter={{ lat: props.lat, lng: props.lon}}

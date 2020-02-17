@@ -1,6 +1,14 @@
-import React from "react";
+import React, { FunctionComponent } from "react";
 
-const SearchBox = ( { change, value, newCity, longEnough, formSubmitHandler } ) => {
+interface ISearchBoxProps {
+	change: any,
+	value: string,
+	newCity: any, 
+	longEnough: boolean,
+	formSubmitHandler: any
+}
+
+const SearchBox : FunctionComponent<ISearchBoxProps> = ( { change, value, newCity, longEnough, formSubmitHandler } ) => {
 	return (
 		<form className="form-inline mt-5"
 		      style={ { width: "100vw" }}

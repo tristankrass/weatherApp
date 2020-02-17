@@ -2,7 +2,14 @@ import React from 'react';
 import {geolocated} from 'react-geolocated';
 import {Spinner} from "../components";
 
-class CurrentLocation extends React.Component {
+interface ICurrentLocationProps {
+	isGeolocationAvailable: boolean;
+	isGeolocationEnabled: boolean;
+	coords: any;
+	callToDatabaseWithCoords: any;
+}
+
+class CurrentLocation extends React.Component<ICurrentLocationProps> {
 	render() {
 		return !this.props.isGeolocationAvailable
 			? <div>Your browser does not support Geolocation</div>

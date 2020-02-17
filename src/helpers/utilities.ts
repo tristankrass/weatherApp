@@ -10,10 +10,7 @@ for( let day = new Date().getDate();  dates.length <= 4; day += 1) {
 	dates.push((currentDate));
 }
 
-export const handleCallToDatabas = () => {
-	
-}
+export const handleCallToDatabas = () => {}
 
-// export const BASE_GMAPURL = `https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=geometry,drawing,places&key=${auth.API_KEY_FOR_GMAPS}`;
 export const BASE_GMAPURL = `https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=geometry,drawing,places&key=${process.env.REACT_APP_API_KEY_FOR_GMAPS}`;
 
