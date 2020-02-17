@@ -46,6 +46,7 @@ Everything is currently built on top of the [OpenWeather API](https://openweathe
 - [x] Add Typescript
 - [x] Nicer UI
 - [ ] Add database
+- [ ] Add Users
 - [x] PWA
 - [ ] Push notificatsions 
 - [ ] Refactoring the existing code

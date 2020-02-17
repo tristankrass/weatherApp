@@ -9,6 +9,9 @@ import CityNotFound                       from "../components/CityNotFound";
 import {FavouriteCities, CurrentLocation} from "./index";
 import {Button}                             from "../components/Button";
 import { type } from 'os';
+import * as Firebase from "firebase/app"
+import 'firebase/firestore';
+import {firebaseConfig} from '../config';
 
 // interface IAppState {
 // 	lat: number,
@@ -34,20 +37,27 @@ import { type } from 'os';
 
 // class App extends React.Component<IProps, IAppState>{
 class App extends React.Component{
-	state = {
-		todaysTemp: undefined,
-		lat: 59.436962,
-		long: 24.753574,
-		showCities: false,
-		Error: false,
-		isLoading: false,
-		city: "Tallinn",
-		currentCity: "Tallinn",
-		cities: [],
-		icons: [],
-		dates: [utilities.dates],
-		temperatures: [],
-	};
+
+	constructor(props) {
+		super(props);
+		Firebase.initializeApp(firebaseConfig);
+
+		this.state = {
+			todaysTemp: undefined,
+			lat: 59.436962,
+			long: 24.753574,
+			showCities: false,
+			Error: false,
+			isLoading: false,
+			city: "Tallinn",
+			currentCity: "Tallinn",
+			cities: [],
+			icons: [],
+			dates: [utilities.dates],
+			temperatures: [],
+		};
+	}
+
 	
 	callToDatabaseWithCoords = () => {
 		// let url = `https://api.openweathermap.org/data/2.5/weather?lat=${this.props.coords.latitude}&lon=${this.props.coords.longitude}&units=metric&appid=${API_KEY_FOR_WEATHER}`
