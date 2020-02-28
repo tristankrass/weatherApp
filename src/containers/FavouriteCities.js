@@ -14,7 +14,7 @@ class FavouriteCities extends Component {
 		newCity: this.props.cities,
 		cities: []
 	};
-	
+
 	componentDidMount() {
 		this.hydrateStateWithLocalStorage();
 	}
@@ -23,22 +23,25 @@ class FavouriteCities extends Component {
 			id: 1 + Math.random(),
 			value: this.props.cities.slice()
 		};
-		
+
 		const cities = [...this.state.cities];
 		let cityValues = cities.map(name => name.value);
-		
-		if ( cityValues.indexOf(newCity.value) === -1) {
+
+		if (cityValues.indexOf(newCity.value) === -1) {
 			cities.push(newCity);
 		} else {
-			console.log("Error")
+			alert(`${newCity.value} already added.`)
+			setTimeout(function () {
+
+			}, 1000)
 		}
-		
+
 		this.setState({
 			cities
 		});
 		localStorage.setItem("cities", JSON.stringify(cities));
 	};
-	
+
 	deleteCity = (id) => {
 		let cities = [...this.state.cities];
 		const updatedCities = cities.filter(city =>
@@ -49,7 +52,7 @@ class FavouriteCities extends Component {
 		});
 		localStorage.setItem("cities", JSON.stringify(updatedCities));
 	};
-	
+
 	hydrateStateWithLocalStorage() {
 		for (let key in this.state) {
 			if (localStorage.hasOwnProperty(key)) {
@@ -63,46 +66,47 @@ class FavouriteCities extends Component {
 			}
 		}
 	}
-	
-	
+
+
 	render() {
 		return (
 			<React.Fragment>
-				<button type="button"
-				className="btn btn-primary"
-				data-toggle="modal"
-				data-target="#exampleModal" >
-					Launch demo modal </button>
-				<div>
-				
-				<hr/>
-					<div className="saveFavourite">
-						<ul className="saveFavourite__ul">
-							<img className="saveFavourite__star" src={star} alt="Add It to your favourite cities"/>
-							{this.state.cities.map(city => {
-								return (
-									< li key = {
-										city.id
-									}
-									className = "saveFavourite__li"
-									onClick = {() => this.props.findAcity} >
+
+				<hr />
+	
+				<div className="d-flex justify-content-center">
+					<ul className="list-group" style={{minWidth: "40rem"}}>
+						{this.state.cities.map(city => {
+							return (
+								<li key={
+									city.id
+								}
+									className="list-group-item d-flex justify-content-center"
+									onClick={() => this.props.findAcity} >
+									<span className="text">
 										{city.value}
-										<button
-											className="btn btn__remove"
-											onClick={() => this.deleteCity(city.id)}>
-											Remove
+									</span>
+
+									<button
+										className="btn btn-warning"
+										onClick={() => this.deleteCity(city.id)}>
+										Remove
 										</button>
-									</li>
-								);
-							})}
-							<button
-								onClick={() => this.addCity()}
-								className="btn btn_addFavourite">
-								Add { this.props.currentCity} to favourites
-							</button>
-						</ul>
-					</div>
+								</li>
+							);
+						})}
+					</ul>
+				
 				</div>
+				<p className="d-flex justify-content-center mt-3">
+				<button
+						onClick={() => this.addCity()}
+						className="btn btn-primary btn-lg">
+						Add {this.props.currentCity} to favourites
+						</button>
+				</p>
+
+
 			</React.Fragment>
 		);
 	}

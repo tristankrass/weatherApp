@@ -1,6 +1,6 @@
 import React, { FunctionComponent, ComponentClass } from "react";
 
-import { withScriptjs, withGoogleMap, GoogleMap, Marker } from "react-google-maps"
+import { withScriptjs, withGoogleMap, GoogleMap, Marker } from "react-google-maps";
 
 interface IProps {
 	lat: string;
@@ -8,12 +8,15 @@ interface IProps {
 	isMarkerShown: boolean;
 }
 
-const Map : ComponentClass = withScriptjs(withGoogleMap((props: any) =>
+const Map: ComponentClass = withScriptjs(withGoogleMap((props: any) =>
 	<GoogleMap
 		defaultZoom={8}
-		defaultCenter={{ lat: props.lat, lng: props.lon}}
+		defaultCenter={{ lat: props.lat, lng: props.lon }}
 	>
-		{props.isMarkerShown && <Marker position={{ lat: props.lat, lng: props.lon}} />}
+		{
+		props.isMarkerShown && 
+		<Marker position={{ lat: props.lat, lng: props.lon }} />
+		}
 	</GoogleMap>
 ));
 export default Map;

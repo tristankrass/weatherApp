@@ -1,14 +1,14 @@
-import React, { Component, SyntheticEvent }                                   from 'react';
+import React from 'react';
 import '../assets/scss/main.css';
 import '../assets/scss/boot/bootstrap.css';
-import {geolocated}                                           from 'react-geolocated';
-import {Spinner, DailyWeatherForecast, SearchBox, Map, Logo} from "../components";
+import { geolocated } from 'react-geolocated';
+import { Spinner, DailyWeatherForecast, SearchBox, Map, Logo } from "../components";
 // import {API_KEY_FOR_WEATHER}              from "../config";
-import * as utilities                     from "../helpers/utilities";
-import CityNotFound                       from "../components/CityNotFound";
-import {FavouriteCities, CurrentLocation} from "./index";
-import {Button}                             from "../components/Button";
-import { type } from 'os';
+import * as utilities from "../helpers/utilities";
+import CityNotFound from "../components/CityNotFound";
+import { FavouriteCities, CurrentLocation } from "./index";
+import { Button } from "../components/Button";
+
 
 // interface IAppState {
 // 	lat: number,
@@ -33,7 +33,7 @@ import { type } from 'os';
 // }
 
 // class App extends React.Component<IProps, IAppState>{
-class App extends React.Component{
+class App extends React.Component {
 	state = {
 		todaysTemp: undefined,
 		lat: 59.436962,
@@ -48,7 +48,7 @@ class App extends React.Component{
 		dates: [utilities.dates],
 		temperatures: [],
 	};
-	
+
 	callToDatabaseWithCoords = () => {
 		// let url = `https://api.openweathermap.org/data/2.5/weather?lat=${this.props.coords.latitude}&lon=${this.props.coords.longitude}&units=metric&appid=${API_KEY_FOR_WEATHER}`
 		let url = `https://api.openweathermap.org/data/2.5/weather?lat=${this.props.coords.latitude}&lon=${this.props.coords.longitude}&units=metric&appid=${process.env.REACT_APP_API_KEY_FOR_WEATHER}`
@@ -74,11 +74,11 @@ class App extends React.Component{
 				this.handleCallToDatabase()
 			})
 	};
-	
+
 	handleCallToDatabase = () => {
 		// const BASE_URL = `https://api.openweathermap.org/data/2.5/forecast?q=${this.state.city}&units=metric&appid=${API_KEY_FOR_WEATHER}`;
 		const BASE_URL = `https://api.openweathermap.org/data/2.5/forecast?q=${this.state.city}&units=metric&appid=${process.env.REACT_APP_API_KEY_FOR_WEATHER}`;
-		if (this.state.city.length >= 2 ) {
+		if (this.state.city.length >= 2) {
 			this.setState({
 				isLoading: true
 			});
@@ -86,7 +86,7 @@ class App extends React.Component{
 				.then(value => {
 					if (!value.ok) {
 						throw new Error();
-						
+
 					}
 					return value.json()
 				})
@@ -95,13 +95,13 @@ class App extends React.Component{
 						lat: data.city.coord.lat,
 						long: data.city.coord.lon,
 						todaysTemp: null,
-						icons: data.list.slice(0,5),
+						icons: data.list.slice(0, 5),
 						temperatures: data.list.slice(0, 5),
 						currentCity: data.city.name,
 						city: "",
 						Error: false,
 					});
-				} )
+				})
 				.catch(() => {
 					this.setState({
 						Error: true,
@@ -123,27 +123,27 @@ class App extends React.Component{
 	};
 
 	showCities = () => {
-		this.setState({ showCities: true})
+		this.setState({ showCities: true })
 	};
 
 	closeCities = () => {
-		this.setState({ showCities: false})
+		this.setState({ showCities: false })
 	};
-	
+
 	// handleInputValue = (e: React.ChangeEvent<HTMLInputElement>) => {
 	handleInputValue = (e) => {
 		this.setState({
 			city: e.target.value
 		})
 	};
-	
+
 	componentDidMount() {
 		this.handleCallToDatabase();
-		if ( !this.state.dates ) {
-			console.log("Loading")
-		}	
+		if (!this.state.dates) {
+			// console.log("Loading")
+		}
 	};
-	
+
 	render() {
 		const temperatures = this.state.temperatures.map((temp, idx) => {
 			return (
@@ -152,62 +152,63 @@ class App extends React.Component{
 					icon={temp.weather[0].icon}
 					temperature={Math.floor(temp.main.temp)}
 					date={this.state.dates[0][idx]}
-					description={temp.weather[0].description}/>
-			)});
-		
-    return (
-      <div className="container">
-	      <Logo/>
-			
-	      { this.state.Error && <CityNotFound /> }
-	      
-	      { this.state.isLoading ? <Spinner/> : null }
-	      <SearchBox change={this.handleInputValue}
-	                 formSubmitHandler={this.formSubmitHandler}
-	                 value={this.state.city}
-	                 newCity={ this.handleCallToDatabase }
-	                 longEnough={!this.state.city.length}/>
-	      
-	     
-	      <div className="searchBar">
-		      <CurrentLocation callToDatabaseWithCoords={this.callToDatabaseWithCoords}/>
-		      { this.state.showCities ?
-			      <Button click={this.closeCities} text="Close Favourite Cities"/>:
-			      <Button click={ this.showCities} text="See your favourite Cities"/>
-		      }
-	      </div>
-	      
-	      
-	      { this.state.showCities && <FavouriteCities
-			      cities={this.state.currentCity}
-			      closeCities={this.closeCities}
-			      currentCity={this.state.currentCity}/>
-	      }
-			
-	     
-	      <hr style={ {marginTop: '3rem'}}/>
-	      
-		      <div>
-			      <h1 className="heading heading__primary">Current Location  { this.state.currentCity }</h1>
-			      <h1 className="heading heading__secondary">Weather Forecast for the next 5 days in { this.state.currentCity }</h1>
-			      <section className="cards jumbotron bg-light border-info">
-				      { temperatures }
-			      </section>
-		      </div>
-	      <hr/>
-	
-	      <Map
-		      isMarkerShown
-		      lat={this.state.lat}
-		      lon={this.state.long}
-		      googleMapURL={utilities.BASE_GMAPURL}
-		      loadingElement={<div style={{ height: `100%` }} />}
-		      containerElement={<div style={{ height: `400px` }} />}
-		      mapElement={<div style={{ height: `100%` }} />}
-	      />
-      </div>
-    );
-  }
+					description={temp.weather[0].description} />
+			)
+		});
+
+		return (
+			<div className="container">
+				<Logo />
+
+				{this.state.Error && <CityNotFound />}
+
+				{this.state.isLoading ? <Spinner /> : null}
+				<SearchBox change={this.handleInputValue}
+					formSubmitHandler={this.formSubmitHandler}
+					value={this.state.city}
+					newCity={this.handleCallToDatabase}
+					longEnough={!this.state.city.length} />
+
+
+				<div className="searchBar">
+					<CurrentLocation callToDatabaseWithCoords={this.callToDatabaseWithCoords} />
+					{this.state.showCities ?
+						<Button click={this.closeCities} text="Close Favourite Cities" /> :
+						<Button click={this.showCities} text="See your favourite Cities" />
+					}
+				</div>
+
+
+				{this.state.showCities && <FavouriteCities
+					cities={this.state.currentCity}
+					closeCities={this.closeCities}
+					currentCity={this.state.currentCity} />
+				}
+
+
+				<hr style={{ marginTop: '3rem' }} />
+
+				<div>
+					<h1 className="heading heading__primary">Current Location  {this.state.currentCity}</h1>
+					<h1 className="heading heading__secondary">Weather Forecast for the next 5 days in {this.state.currentCity}</h1>
+					<section className="cards jumbotron bg-light border-info">
+						{temperatures}
+					</section>
+				</div>
+				<hr />
+
+				<Map
+					isMarkerShown
+					lat={this.state.lat}
+					lon={this.state.long}
+					googleMapURL={utilities.BASE_GMAPURL}
+					loadingElement={<div style={{ height: `100%` }} />}
+					containerElement={<div style={{ height: `400px` }} />}
+					mapElement={<div style={{ height: `100%` }} />}
+				/>
+			</div>
+		);
+	}
 }
 
 export default geolocated({
