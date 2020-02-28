@@ -3,7 +3,6 @@ import '../assets/scss/main.css';
 import '../assets/scss/boot/bootstrap.css';
 import { geolocated } from 'react-geolocated';
 import { Spinner, DailyWeatherForecast, SearchBox, Map, Logo } from "../components";
-// import {API_KEY_FOR_WEATHER}              from "../config";
 import * as utilities from "../helpers/utilities";
 import CityNotFound from "../components/CityNotFound";
 import { FavouriteCities, CurrentLocation } from "./index";
@@ -33,6 +32,7 @@ import { Button } from "../components/Button";
 // }
 
 // class App extends React.Component<IProps, IAppState>{
+
 class App extends React.Component {
 	state = {
 		todaysTemp: undefined,
@@ -48,6 +48,7 @@ class App extends React.Component {
 		dates: [utilities.dates],
 		temperatures: [],
 	};
+
 
 	callToDatabaseWithCoords = () => {
 		// let url = `https://api.openweathermap.org/data/2.5/weather?lat=${this.props.coords.latitude}&lon=${this.props.coords.longitude}&units=metric&appid=${API_KEY_FOR_WEATHER}`
