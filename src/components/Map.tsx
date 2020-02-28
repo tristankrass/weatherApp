@@ -1,12 +1,12 @@
-import React, { FunctionComponent, ComponentClass } from "react";
+import React, { ComponentClass } from "react";
 
 import { withScriptjs, withGoogleMap, GoogleMap, Marker } from "react-google-maps";
 
-interface IProps {
-	lat: string;
-	lon: string;
-	isMarkerShown: boolean;
-}
+// interface IProps {
+// 	lat: string;
+// 	lon: string;
+// 	isMarkerShown: boolean;
+// }
 
 const Map: ComponentClass = withScriptjs(withGoogleMap((props: any) =>
 	<GoogleMap

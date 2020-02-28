@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import star from "../assets/images/Star.svg";
 
 // interface IFavouriteCitiesState {
 // 	cities: any;
@@ -18,6 +17,7 @@ class FavouriteCities extends Component {
 	componentDidMount() {
 		this.hydrateStateWithLocalStorage();
 	}
+
 	addCity = () => {
 		const newCity = {
 			id: 1 + Math.random(),
@@ -73,9 +73,9 @@ class FavouriteCities extends Component {
 			<React.Fragment>
 
 				<hr />
-	
+
 				<div className="d-flex justify-content-center">
-					<ul className="list-group" style={{minWidth: "40rem"}}>
+					<ul className="list-group" style={{ minWidth: "40rem" }}>
 						{this.state.cities.map(city => {
 							return (
 								<li key={
@@ -96,10 +96,10 @@ class FavouriteCities extends Component {
 							);
 						})}
 					</ul>
-				
+
 				</div>
 				<p className="d-flex justify-content-center mt-3">
-				<button
+					<button
 						onClick={() => this.addCity()}
 						className="btn btn-primary btn-lg">
 						Add {this.props.currentCity} to favourites
